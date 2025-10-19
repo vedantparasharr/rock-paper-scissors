@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock - Paper - Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Rock Paper Scissors</h1>
+        </header>
+
+        <main class="game">
+            <!-- Game Result Section -->
+            <section class="game-result">
+                <p class="result-text"></p>
+            </section>
+
+            <!-- Move Selection Section -->
+            <section class="game-moves">
+                <button class="move-btn rock" aria-label="Choose Rock">
+                    <img src="img/rock.png" alt="rock hand gesture">
+                    <span>Rock</span>
+                </button>
+                <button class="move-btn paper" aria-label="Choose Paper">
+                    <img src="img/paper.png" alt="paper hand gesture">
+                    <span>Paper</span>
+                </button>
+                <button class="move-btn scissors" aria-label="Choose Scissors">
+                    <img src="img/scissors.png" alt="scissors hand gesture">
+                    <span>Scissors</span>
+                </button>
+            </section>
+
+            <!-- Match Display Section -->
+            <section class="game-match">
+                <p class="match-display"></p>
+            </section>
+
+            <!-- Score Section -->
+            <section class="game-score">
+                <div class="score-card">
+                    <p class="score-text"></p>
+                </div>
+            </section>
+
+            <!-- Controls Section -->
+            <section class="game-controls">
+                <button class="control-btn reset-btn">Reset Score</button>
+                <button class="control-btn auto-btn">Auto Play</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
