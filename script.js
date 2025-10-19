@@ -104,7 +104,7 @@ function playGame(playerMove) {
 
     // Compare moves and update score
     if (playerMove === computerMove) {
-        result = `<p style = "color: var(--neutral-900)">TIE!`;
+        result = `<p style = "color: var(--warning)">TIE!`;
         score.ties++;
     } else if (
         (playerMove === 'Rock' && computerMove === 'Scissors') ||
