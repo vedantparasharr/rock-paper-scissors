@@ -4,58 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock - Paper - Scissors</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <header class="header">
-            <h1 class="title">Rock Paper Scissors</h1>
+        <header>
+            <h1>Rock Paper Scissors</h1>
         </header>
 
-        <main class="game">
-            <!-- Game Result Section -->
-            <section class="game-result">
-                <p class="result-text"></p>
-            </section>
+        <section class="score-section">
+            <div class="score-label">Current Score</div>
+            <div class="score-text">Wins: 5 | Losses: 3 | Ties: 2</div>
+        </section>
 
-            <!-- Move Selection Section -->
-            <section class="game-moves">
-                <button class="move-btn rock" aria-label="Choose Rock">
-                    <img src="img/rock.png" alt="rock hand gesture">
-                    <span>Rock</span>
-                </button>
-                <button class="move-btn paper" aria-label="Choose Paper">
-                    <img src="img/paper.png" alt="paper hand gesture">
-                    <span>Paper</span>
-                </button>
-                <button class="move-btn scissors" aria-label="Choose Scissors">
-                    <img src="img/scissors.png" alt="scissors hand gesture">
-                    <span>Scissors</span>
-                </button>
-            </section>
+        <main>
 
-            <!-- Match Display Section -->
-            <section class="game-match">
-                <p class="match-display"></p>
-            </section>
-
-            <!-- Score Section -->
-            <section class="game-score">
-                <div class="score-card">
-                    <p class="score-text"></p>
+            <!-- Match Display -->
+            <section class="game-section">
+                <div class="match-display">
+                    <div class="player-move">
+                        <span>You</span>
+                        <div class="move-image">✊</div>
+                    </div>
+                    <div class="computer-move">
+                        <span>CPU</span>
+                        <div class="move-image">✋</div>
+                    </div>
                 </div>
             </section>
 
-            <!-- Controls Section -->
-            <section class="game-controls">
-                <button class="control-btn reset-btn">Reset Score</button>
-                <button class="control-btn auto-btn">Auto Play</button>
+            <!-- Result Display -->
+            <section class="result-section">
+                <div class="result-label">Result</div>
+                <div class="result-text win">Make your move!</div>
+            </section>
+
+            <!-- Game Controls -->
+            <section class="game-section">
+                <div class="section-title">Make Your Move</div>
+                <div class="buttons-grid">
+                    <button class="rock">
+                        <span class="button-icon">✊</span>
+                        <span class="button-label">Rock</span>
+                    </button>
+                    <button class="paper">
+                        <span class="button-icon">✋</span>
+                        <span class="button-label">Paper</span>
+                    </button>
+                    <button class="scissors">
+                        <span class="button-icon">✌️</span>
+                        <span class="button-label">Scissors</span>
+                    </button>
+                </div>
+                <div class="keyboard-hints">
+                    💡 Keyboard: R/Q for Rock, P/W for Paper, S/E for Scissors
+                </div>
+            </section>
+
+            <!-- Control Buttons -->
+            <section class="game-section">
+                <div class="control-buttons">
+                    <button class="reset-btn">Reset Score</button>
+                    <button class="auto-btn">Auto Play</button>
+                </div>
             </section>
         </main>
-    </div>
 
+        <footer>
+            <p>Play Rock Paper Scissors against the computer. Click buttons or use keyboard shortcuts to play!</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 

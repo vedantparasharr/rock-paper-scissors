@@ -104,7 +104,7 @@ function playGame(playerMove) {
 
     // Compare moves and update score
     if (playerMove === computerMove) {
-        result = `TIE!`;
+        result = `<p style = "color: var(--neutral-900)">TIE!`;
         score.ties++;
     } else if (
         (playerMove === 'Rock' && computerMove === 'Scissors') ||
@@ -114,7 +114,7 @@ function playGame(playerMove) {
         result = `You WIN!`;
         score.wins++;
     } else {
-        result = `You Lose!`;
+        result = `<p style = "color: var(--danger)">You Lose!</p>`;
         score.losses++;
     }
 
@@ -131,11 +131,22 @@ function playGame(playerMove) {
 
     // Show selected moves with image
     function moveDisplay() {
+        const icons = {
+            Rock: '✊',
+            Paper: '✋',
+            Scissors: '✌️'
+        };
         document.querySelector('.match-display').innerHTML = `
-            You: <img src="img/${playerMove.toLowerCase()}.png" alt="${playerMove}" width="50" height="50"> 
-            | Computer: <img src="img/${computerMove.toLowerCase()}.png" alt="${computerMove}" width="50" height="50">
-        `;
+    <div class="player-move">
+      <span><b>YOU</b></span>
+      <div class="move-image">${icons[playerMove]}</div>
+    </div>
+    <div class="computer-move">
+      <span><b>CPU</b></span>
+      <div class="move-image">${icons[computerMove]}</div>
+    </div>`;
     }
+
 
     // Show result text
     function resultDisplay() {
