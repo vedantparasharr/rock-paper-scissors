@@ -1,6 +1,6 @@
 # Rock Paper Scissors Game
 
-A classic Rock Paper Scissors game built with vanilla JavaScript, HTML, and CSS. Play against the computer with an intuitive interface and multiple input options.
+A classic Rock Paper Scissors game built with vanilla JavaScript, HTML, and CSS. Play against the computer with an intuitive interface and multiple input options
 
 ## Features
 
